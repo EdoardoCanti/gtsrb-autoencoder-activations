@@ -1,0 +1,12 @@
+_data/
+experiments/
+*.pth
+*.pt
+*.pkl
+plots/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
+

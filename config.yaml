@@ -1,0 +1,28 @@
+
+# Spaces dimensions
+INPUT_SPACE_DIMENSION: 12288 #3*64*64
+LATENT_SPACE_DIMENSION: 512
+
+# AutoEncoder Layers config
+AUTOENCODER_CONFIG:
+  NEURONS:
+    - 4096
+    - 1024
+
+# Training
+TRAINING:
+  BATCH_SIZE: 64
+  NUM_EPOCHS: 15
+  ACTIVATION_FUNCTIONS:
+    - 'relu'
+    - 'lrelu'
+    - 'elu'
+    - 'selu'
+    - 'gelu'
+    - 'swish'
+
+# Optimizer
+OPTIMIZER:
+  TYPE: "AdamW"
+  LR: 1e-4
+  DECAY: 1e-4
